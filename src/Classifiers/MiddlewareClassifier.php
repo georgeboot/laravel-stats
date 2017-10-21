@@ -19,6 +19,8 @@ class MiddlewareClassifier extends Classifier
         //     return true;
         // }
 
+        return collect([]);
+
         $router = app('router');
 
         return collect($router->getMiddleware())
