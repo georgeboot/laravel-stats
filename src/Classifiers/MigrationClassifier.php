@@ -13,7 +13,6 @@ class MigrationClassifier extends Classifier
 
     public function satisfies(ReflectionClass $class)
     {
-        dump($class->getFileName());
         return $class->isSubclassOf(\Illuminate\Database\Migrations\Migration::class);
     }
 }
