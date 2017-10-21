@@ -13,7 +13,7 @@ class MiddlewareClassifier extends Classifier
 
     public function satisfies(ReflectionClass $class)
     {
-        return collect([]);
+        return false; // Lumen
 
         $kernel = app(\Illuminate\Contracts\Http\Kernel::class);
 

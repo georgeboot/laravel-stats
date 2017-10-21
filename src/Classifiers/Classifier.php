@@ -10,15 +10,15 @@ class Classifier
         ControllerClassifier::class,
         ModelClassifier::class,
         CommandClassifier::class,
-        RuleClassifier::class,
-        PolicyClassifier::class,
+        // RuleClassifier::class,
+        // PolicyClassifier::class,
         MiddlewareClassifier::class,
         EventClassifier::class,
-        MailClassifier::class,
-        NotificationClassifier::class,
+        // MailClassifier::class,
+        // NotificationClassifier::class,
         JobClassifier::class,
         MigrationClassifier::class,
-        RequestClassifier::class,
+        // RequestClassifier::class,
         ResourceClassifier::class,
         SeederClassifier::class,
         ServiceProviderClassifier::class,
@@ -34,6 +34,7 @@ class Classifier
             }
         }
 
+        dump ($class->getFileName());
         return 'Other';
     }
 }

@@ -72,8 +72,6 @@ class ClassFinder
             ->in(config('stats.paths', []))
             ->name('*.php');
 
-        dd($files);
-
         return collect($files)
             ->reject(function ($file) use ($excludes) {
                 return $this->isExcluded($file, $excludes);
